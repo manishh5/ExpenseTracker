@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: "https://expense-tracker-backend-m4vx.onrender.com/api" });
+const API = axios.create({ baseURL: "https://expense-tracker-backend-gy5b.onrender.com/api" });
 
 // If using JWT, attach token:
 // API.interceptors.request.use(cfg => {
