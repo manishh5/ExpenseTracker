@@ -30,8 +30,8 @@ export default function ExpenseForm({ onAdd, editing, onUpdate, onCancel }){
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3">
-      <h2 className="font-semibold">{editing ? 'Edit Expense' : 'Add Expense'}</h2>
+    <form onSubmit={handleSubmit} className="space-y-3 ">
+      <h2 className="font-semibold text-black">{editing ? 'Edit Expense' : 'Add Expense'}</h2>
       <input placeholder="Title" value={form.title} onChange={e=>setForm({...form, title:e.target.value})} className="text-bg w-full p-2 border rounded" />
       <input placeholder="Amount" type="number" step="0.01" value={form.amount} onChange={e=>setForm({...form, amount:e.target.value})} className="w-full p-2 text-bg border rounded" />
       <input placeholder="Category (eg. Food, Travel)" value={form.category} onChange={e=>setForm({...form, category:e.target.value})} className="w-full p-2 text-bg border rounded" />

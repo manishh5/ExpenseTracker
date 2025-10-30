@@ -17,11 +17,11 @@ export default function CategoryChart({ expenses }){
     };
   }, [expenses]);
 
-  if(!data.labels || data.labels.length === 0) return <div>No chart data</div>;
+  if(!data.labels || data.labels.length === 0) return <div className='text-black'>No chart data</div>;
 
   return (
     <div>
-      <h3 className="font-semibold mb-3">Category Chart</h3>
+      <h3 className="font-semibold mb-3 text-black">Category Chart</h3>
       <div className="max-w-md mx-auto">
         <Doughnut data={data} />
       </div>

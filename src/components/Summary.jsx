@@ -11,7 +11,7 @@ export default function Summary({ expenses }){
   }, [expenses]);
 
   return (
-    <div>
+    <div className="text-black">
       <h3 className="font-semibold mb-2">Summary</h3>
       <div className="text-xl font-bold mb-4">Total: ₹{total.toFixed(2)}</div>
       <div>

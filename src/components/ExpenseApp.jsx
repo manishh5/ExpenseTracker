@@ -70,7 +70,7 @@ export default function ExpenseApp(){
         </div>
 
         <div className="bg-white p-4 rounded shadow">
-          <h2 className="font-semibold mb-2">Filters</h2>
+          <h2 className="font-semibold mb-2 text-black">Filters</h2>
           <div className="space-y-2 text-bg">
             <select value={filters.category} onChange={e=>setFilters({...filters, category: e.target.value})}
               className="w-full p-2 border rounded">
@@ -89,9 +89,9 @@ export default function ExpenseApp(){
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6">
-        <div className="md:col-span-2 bg-white p-4 rounded shadow">
-          <h2 className="font-semibold mb-2">Expenses {loading && '(loading...)'}</h2>
+      <div className="grid md:grid-cols-3 gap-6 ">
+        <div className="md:col-span-2 bg-white p-4 rounded shadow ">
+          <h2 className="font-semibold mb-2 text-black">Expenses {loading && '(loading...)'}</h2>
           <ExpenseList expenses={expenses} onEdit={e=>setEditing(e)} onDelete={deleteExpense} />
         </div>
 
